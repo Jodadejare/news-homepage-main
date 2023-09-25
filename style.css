@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    padding: 2rem;
+    position: relative;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+nav button{
+    display: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.links button{
+    display: none;
+}
+
+.links ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.links ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.links ul a:hover{
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+}
+
+@media (max-width: 768px) {
+
+
+
+  .links ul{
+        display: block;
+        list-style: none;
+        line-height: 3rem;
+        position: absolute;
+        padding-left: 1.5rem;
+        top: 8%;
+    }
+    
+    .links ul a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #nav-btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+    }
+
+    
+    #whole-link{
+        display: none;
+        background-color: white;
+        height: 100%;
+        position: absolute;
+        width: 68%;
+        top: 0;
+        left: 32%;
+    }
+    
+    #nav-close{
+        border: none;
+        background-color: transparent;
+        margin: 1rem;
+        position: absolute;
+        right: 0;
+        top: 1%;
+    }
+}
+
+
+
+.bright_text{
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+
+.bright_p{
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+    color: hsl(236, 13%, 42%);
+}
+
+.btn{
+    border: 0;
+    padding: 1rem 2rem;
+    letter-spacing: 0.2rem;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    margin-bottom: 2.5rem;
+}
+
+.left img{
+    width: 100%;
+}
+
+.right{
+    background-color: hsl(240, 100%, 5%);
+    padding: 2rem 2rem 0 2rem;
+}
+
+.right h1{
+    color: hsl(35, 77%, 62%);
+}
+
+.right h3{
+    color: white;
+    margin: 1.8rem 0 1rem 0;
+}
+
+.right h3:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%)
+}
+
+.right p{
+    color: hsl(233, 8%, 79%);
+    line-height: 1.5rem;
+    /* padding-bottom: 2rem; */
+}
+
+.right > div:not(:last-child){
+    padding-bottom: 1.8rem;
+    border-bottom: 0.1rem hsl(233, 8%, 79%) solid;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+    line-height: 1.5rem;
+}
+
+.card img{
+    width: 8rem;
+}
+
+.card h1{
+    color: hsl(233, 8%, 79%);
+    font-size: 1.5rem;
+}
+
+.card h3 p{
+    font-size: 0.6rem;
+}
+
+.card h3{
+    font-weight: 800;
+    margin: 0.6rem 0;
+}
+
+.card h3:hover{
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+}
+
+.card p{
+    color: hsl(236, 13%, 42%);
+}
+
+@media (min-width: 1024px) {
+    .first-section{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 1.5rem;
+    }
+
+   /* .bright_text{
+        font-size: 2rem;
+    } */
+
+    .bright{
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    .bright-h{
+        width: 50%;
+        margin-right: 1.5rem;
+    }
+
+    .bright-pb{
+        width: 50%;
+    }
+
+    #cards{
+        display: flex;
+    }
+
+    .card h3, p{
+        font-size: 1rem;
+    }
+
+    .card{
+        margin-right: 1rem;
+    }
+}
